@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/milky_way_bg_land"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawingCacheQuality="auto"
+        android:indeterminateDrawable="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle_imageview"
+        android:padding="5sp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/q1image" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle_imageview"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="@string/q1"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        fbutton:autoSizeTextType="uniform" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnAnswer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/btnAnswer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        fbutton:buttonColor="@color/fbutton_color_alizarin"
+        fbutton:shadowColor="@color/fbutton_color_midnight_blue" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnAnswer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/btnAnswer3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnswer1"
+        fbutton:buttonColor="@color/fbutton_color_alizarin"
+        fbutton:shadowColor="@color/fbutton_color_midnight_blue" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnAnswer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/btnAnswer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnswer2"
+        fbutton:buttonColor="@color/fbutton_color_alizarin"
+        fbutton:shadowColor="@color/fbutton_color_midnight_blue" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnAnswer4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnswer3"
+        fbutton:buttonColor="@color/fbutton_color_alizarin"
+        fbutton:shadowColor="@color/fbutton_color_midnight_blue" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
