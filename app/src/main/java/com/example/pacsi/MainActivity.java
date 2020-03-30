@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.thekhaeng.pushdownanim.PushDownAnim;
+
 public class MainActivity extends AppCompatActivity {
 
     private final String SCORE_KEY = "SCORE";
@@ -164,15 +166,26 @@ public class MainActivity extends AppCompatActivity {
         btnAnswer3.setText(q1.getAnswer3());
         btnAnswer4.setText(q1.getAnswer4());
 
+
+
+
+
+
         isAnswer1 = q1.isAnswerBool1();
         isAnswer2 = q1.isAnswerBool2();
         isAnswer3 = q1.isAnswerBool3();
         isAnswer4 = q1.isAnswerBool4();
 
 
-        btnAnswer1.setOnClickListener(new View.OnClickListener() {
+
+        PushDownAnim.setPushDownAnimTo( btnAnswer1 ).setScale( PushDownAnim.MODE_STATIC_DP , 2 )
+                .setDurationPush( PushDownAnim.DEFAULT_PUSH_DURATION )
+                .setDurationRelease( PushDownAnim.DEFAULT_RELEASE_DURATION )
+                .setInterpolatorPush( PushDownAnim.DEFAULT_INTERPOLATOR )
+                .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR )
+                .setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
 
                 evaluateUserAnswer(isAnswer1);
                 changeQuestionOnButtonClick();
@@ -181,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnAnswer2.setOnClickListener(new View.OnClickListener() {
+        PushDownAnim.setPushDownAnimTo(btnAnswer2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -191,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnAnswer3.setOnClickListener(new View.OnClickListener() {
+        PushDownAnim.setPushDownAnimTo(btnAnswer3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -201,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnAnswer4.setOnClickListener(new View.OnClickListener() {
+        PushDownAnim.setPushDownAnimTo(btnAnswer4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
