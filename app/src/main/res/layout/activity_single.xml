@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MultiActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:progressDrawable="@drawable/customprogressbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rectangle_imageview"
+        android:padding="5sp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/q1image"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="1"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/rectangle_imageview"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="@string/q1"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <Button
+        android:id="@+id/btnSingleMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="1"
+        android:background="@drawable/selector_button"
+
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btnMultiMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:alpha="1"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a2"
+
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSingleMain" />
+
+    <Button
+        android:id="@+id/btnPhotosMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:alpha="1"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a3"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiMain" />
+
+    <Button
+        android:id="@+id/btnInfoMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:alpha="1"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/q1a4"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhotosMain" />
+
+    <ImageView
+        android:id="@+id/pdaImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/pda" />
+
+    <com.prush.typedtextview.TypedTextView
+        android:id="@+id/pdaText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        app:cursor_blink_speed="500"
+        app:layout_constraintBottom_toBottomOf="@id/pdaImage"
+        app:layout_constraintEnd_toEndOf="@id/pdaImage"
+        app:layout_constraintStart_toStartOf="@+id/pdaImage"
+        app:layout_constraintTop_toTopOf="@id/pdaImage"
+        app:play_keystrokes_audio="false"
+        app:randomize_typing_speed="false"
+        app:sentence_pause="500"
+        app:split_sentences="true"
+        app:typing_speed="75" />
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rectangle_imageview"
+        app:layout_constraintBottom_toBottomOf="@+id/pdaText"
+        app:layout_constraintEnd_toEndOf="@+id/pdaText"
+        app:layout_constraintStart_toStartOf="@+id/pdaText"
+        android:text="OK"
+        android:textSize="20sp"
+        android:fontFamily="@font/audiowide"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

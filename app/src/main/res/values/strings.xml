@@ -120,10 +120,24 @@
     <string name="q20a2">2020</string>
     <string name="q20a3">2012</string>
     <string name="q20a4">2002</string>
+
     <string name="welcome">Üdvözöllek a Pannon Csillagda Űrközpontban</string>
     <string name="single">Egyéni Küldetés</string>
     <string name="multi">Csoportos küldetés</string>
     <string name="photo_main">Fotó album</string>
     <string name="info_main">Információk</string>
+
+
+    <string name="pda1_1">Üdvözlöm Kapitány!
+        \n \n
+        Pluto vagyok, a Pannon Csillagda első számú űrhajója.
+        Én segítelek a küldestésben, melynek célpontja a Mars bolygó meghódítása.
+        </string>
+
+    <string name="pda1_2"> Küldetésünk első helyszíne, a Pannon Csillagda első szintje lesz.
+        Itt megismerkedsz mindennel ami szükséges a felszálláshoz.
+        \n \n
+        Készen állsz?</string>
+
 
 </resources>

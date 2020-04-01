@@ -1,20 +1,35 @@
 package com.example.pacsi;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.prush.typedtextview.TypedTextView;
+import com.shashank.sony.fancytoastlib.FancyToast;
 import com.thekhaeng.pushdownanim.PushDownAnim;
 
-public class MultiActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class SingleActivity extends AppCompatActivity {
+
+    private TypedTextView pdaText;
+    private int[] pda1 = {R.string.pda1_1, R.string.pda1_2};
+    private Button imageButton;
+    private int messageCounter;
+
+    private ImageView pdaImage;
 
     private final String SCORE_KEY = "SCORE";
     private final String INDEX_KEY = "INDEX";
@@ -23,8 +38,6 @@ public class MultiActivity extends AppCompatActivity {
     private TextView mTxtQuestion;
 
     private ImageView mImageView;
-
-
 
 
     private Button btnAnswer1;
@@ -132,31 +145,42 @@ public class MultiActivity extends AppCompatActivity {
 
     final int USER_PROGRESS = (int) Math.ceil(100.0 / questionCollection.length);
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_single);
 
-        if (savedInstanceState != null){
-            mQuizScore = savedInstanceState.getInt(SCORE_KEY);
-            mQuestionIndex = savedInstanceState.getInt(INDEX_KEY);
+        imageButton = findViewById(R.id.imageButton);
 
-        }else{
-            mQuizScore = 0;
-            mQuestionIndex = 0;
-        }
+        pdaImage = findViewById(R.id.pdaImage);
+
+        pdaText = findViewById(R.id.pdaText);
+
+        final TypedTextView.Builder builder = new TypedTextView.Builder(pdaText);
+
+        pdaText.setTypedText(pda1[messageCounter]);
+
+        builder.build();
 
         mTxtQuestion = findViewById(R.id.textView);
         mTxtQuestion.setTextSize(20f);
+        mTxtQuestion.setScaleX(0f);
+        mTxtQuestion.setScaleY(0f);
 
         mImageView = findViewById(R.id.imageView);
-
-
 
         btnAnswer1 = findViewById(R.id.btnSingleMain);
         btnAnswer2 = findViewById(R.id.btnMultiMain);
         btnAnswer3 = findViewById(R.id.btnPhotosMain);
         btnAnswer4 = findViewById(R.id.btnInfoMain);
+
+        btnAnswer1.setTranslationX(1500);
+        btnAnswer2.setTranslationX(-1500);
+        btnAnswer3.setTranslationX(1500);
+        btnAnswer4.setTranslationX(-1500);
 
         mProgressBar = findViewById(R.id.progressBar);
 
@@ -189,22 +213,22 @@ public class MultiActivity extends AppCompatActivity {
                 .setInterpolatorPush( PushDownAnim.DEFAULT_INTERPOLATOR )
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR )
                 .setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                    @Override
+                    public void onClick(View view) {
 
-                evaluateUserAnswer(isAnswer1);
-                changeQuestionOnButtonClick();
+                        evaluateUserAnswer(isAnswer1);
 
 
-            }
-        });
+
+                    }
+                });
 
         PushDownAnim.setPushDownAnimTo(btnAnswer2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 evaluateUserAnswer(isAnswer2);
-                changeQuestionOnButtonClick();
+
 
             }
         });
@@ -214,7 +238,7 @@ public class MultiActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 evaluateUserAnswer(isAnswer3);
-                changeQuestionOnButtonClick();
+
 
             }
         });
@@ -224,11 +248,72 @@ public class MultiActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 evaluateUserAnswer(isAnswer4);
-                changeQuestionOnButtonClick();
+
 
             }
         });
 
+
+
+//        pdaText = builder.build();
+
+//        pdaText.setTypedText(R.string.q1);
+
+//        pdaText = builder.build();
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                messageCounter++;
+                if (messageCounter < pda1.length) {
+                    pdaText.setTypedText(pda1[messageCounter]);
+
+                    builder.build();
+
+
+
+
+                }else {
+
+                    btnON();
+                    changeQuestionOnButtonClick();
+
+
+
+
+                }
+            }
+        });
+
+    }
+
+    public void pdaOn(){
+
+        pdaImage.animate().translationYBy(-2500).setDuration(1500);
+        pdaText.animate().translationYBy(-2500).setDuration(1500);
+        imageButton.animate().translationYBy(-2500).setDuration(1500);
+
+        mTxtQuestion.animate().scaleX(0f).scaleY(0f).setDuration(1500);
+
+        btnAnswer1.animate().translationXBy(1500).setDuration(1500);
+        btnAnswer2.animate().translationXBy(-1500).setDuration(1500);
+        btnAnswer3.animate().translationXBy(1500).setDuration(1500);
+        btnAnswer4.animate().translationXBy(-1500).setDuration(1500);
+
+    }
+
+    public void btnON(){
+
+        pdaImage.animate().translationYBy(2500).setDuration(1500);
+        pdaText.animate().translationYBy(2500).setDuration(1500);
+        imageButton.animate().translationYBy(2500).setDuration(1500);
+
+        mTxtQuestion.animate().scaleX(1f).scaleY(1f).setDuration(1500);
+
+        btnAnswer1.animate().translationXBy(-1500).setDuration(1500);
+        btnAnswer2.animate().translationXBy(1500).setDuration(1500);
+        btnAnswer3.animate().translationXBy(-1500).setDuration(1500);
+        btnAnswer4.animate().translationXBy(1500).setDuration(1500);
 
     }
 
@@ -236,30 +321,36 @@ public class MultiActivity extends AppCompatActivity {
 
         if (userGuess){
 
-            mQuizScore++;
+            pdaOn();
+            mQuestionIndex++;
+            if (mQuestionIndex == questionCollection.length){
 
+                AlertDialog.Builder quizAlert = new AlertDialog.Builder(SingleActivity.this);
+                quizAlert.setCancelable(false);
+                quizAlert.setTitle("Gratulálok! Sikeresen meghódítottad a Marsot.");
+                quizAlert.setMessage("Összesen " + mQuizScore + " kérdésre válaszoltál helyesen.");
+                quizAlert.setPositiveButton("Játék befejezése", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+                quizAlert.show();
+            }
+            mProgressBar.incrementProgressBy(USER_PROGRESS);
+
+        }else {
+            FancyToast.makeText(SingleActivity.this,"Ezen még egy kicsit gondolkodjunk",
+                    FancyToast.LENGTH_SHORT, FancyToast.ERROR,true).show();
         }
 
     }
 
     private void changeQuestionOnButtonClick(){
 
-        mQuestionIndex = (mQuestionIndex + 1) % questionCollection.length;
 
-        if (mQuestionIndex == 0){
 
-            AlertDialog.Builder quizAlert = new AlertDialog.Builder(MultiActivity.this);
-            quizAlert.setCancelable(false);
-            quizAlert.setTitle("Gratulálok! Sikeresen meghódítottad a Marsot.");
-            quizAlert.setMessage("Összesen " + mQuizScore + " kérdésre válaszoltál helyesen.");
-            quizAlert.setPositiveButton("Játék befejezése", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    finish();
-                }
-            });
-            quizAlert.show();
-        }
+
 
         mTxtQuestion.setText(questionCollection[mQuestionIndex].getQuestion());
         mImageView.setImageResource(questionCollection[mQuestionIndex].getQuestionImage());
@@ -271,18 +362,8 @@ public class MultiActivity extends AppCompatActivity {
         isAnswer2 = questionCollection[mQuestionIndex].isAnswerBool2();
         isAnswer3 = questionCollection[mQuestionIndex].isAnswerBool3();
         isAnswer4 = questionCollection[mQuestionIndex].isAnswerBool4();
-        mProgressBar.incrementProgressBy(USER_PROGRESS);
+
 
     }
-
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-        outState.putInt(SCORE_KEY, mQuizScore);
-        outState.putInt(INDEX_KEY, mQuestionIndex);
-
-    }
-
 
 }

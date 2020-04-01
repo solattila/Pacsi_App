@@ -38,11 +38,13 @@ public class mainmenu extends AppCompatActivity implements View.OnClickListener 
         switch (v.getId()){
 
             case R.id.btnSingleMain:
+                Intent intentSingle = new Intent(mainmenu.this, SingleActivity.class);
+                startActivity(intentSingle);
                 break;
 
             case R.id.btnMultiMain:
-                Intent intent = new Intent(mainmenu.this, MultiActivity.class);
-                startActivity(intent);
+                Intent intentMulti = new Intent(mainmenu.this, MultiActivity.class);
+                startActivity(intentMulti);
                 break;
 
             case R.id.btnPhotosMain:
