@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.thekhaeng.pushdownanim.PushDownAnim;
 
-public class MainActivity extends AppCompatActivity {
+public class MultiActivity extends AppCompatActivity {
 
     private final String SCORE_KEY = "SCORE";
     private final String INDEX_KEY = "INDEX";
@@ -145,13 +145,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         mTxtQuestion = findViewById(R.id.textView);
+        mTxtQuestion.setTextSize(20f);
 
         mImageView = findViewById(R.id.imageView);
 
-        btnAnswer1 = findViewById(R.id.btnAnswer1);
-        btnAnswer2 = findViewById(R.id.btnAnswer2);
-        btnAnswer3 = findViewById(R.id.btnAnswer3);
-        btnAnswer4 = findViewById(R.id.btnAnswer4);
+        btnAnswer1 = findViewById(R.id.btnSingleMain);
+        btnAnswer2 = findViewById(R.id.btnMultiMain);
+        btnAnswer3 = findViewById(R.id.btnPhotosMain);
+        btnAnswer4 = findViewById(R.id.btnInfoMain);
 
         mProgressBar = findViewById(R.id.progressBar);
 
@@ -243,7 +244,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (mQuestionIndex == 0){
 
-            AlertDialog.Builder quizAlert = new AlertDialog.Builder(MainActivity.this);
+            AlertDialog.Builder quizAlert = new AlertDialog.Builder(MultiActivity.this);
             quizAlert.setCancelable(false);
             quizAlert.setTitle("Gratulálok! Sikeresen meghódítottad a Marsot.");
             quizAlert.setMessage("Összesen " + mQuizScore + " kérdésre válaszoltál helyesen.");

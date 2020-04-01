@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".MainActivity">
+    tools:context=".MultiActivity">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -74,7 +74,7 @@
         app:layout_constraintGuide_percent="0.55" />
 
     <Button
-        android:id="@+id/btnAnswer1"
+        android:id="@+id/btnSingleMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/btnAnswer2"
+        android:id="@+id/btnMultiMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -103,11 +103,11 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnswer1"
+        app:layout_constraintTop_toBottomOf="@+id/btnSingleMain"
      />
 
     <Button
-        android:id="@+id/btnAnswer3"
+        android:id="@+id/btnPhotosMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -120,11 +120,11 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnswer2"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiMain"
         />
 
     <Button
-        android:id="@+id/btnAnswer4"
+        android:id="@+id/btnInfoMain"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -137,7 +137,7 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnswer3"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhotosMain"
        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
