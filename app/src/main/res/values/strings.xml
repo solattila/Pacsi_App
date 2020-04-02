@@ -91,10 +91,10 @@
     <string name="q15a3">Starman</string>
     <string name="q15a4">Lajka</string>
 
-    <string name="q16">Mi a neve a naprendszer legmagasabb hegycsúcsának?</string>
+    <string name="q16">Mi a neve a Naprendszer legmagasabb hegycsúcsának?</string>
     <string name="q16a1">Columbia Hegy</string>
     <string name="q16a2">Grissom Hegy</string>
-    <string name="q16a3">Omlympus Hegy</string>
+    <string name="q16a3">Olympus Hegy</string>
     <string name="q16a4">Chaffee Hegy</string>
 
     <string name="q17">Mi színezi vörösre a Mars felszínét?</string>
@@ -128,16 +128,226 @@
     <string name="info_main">Információk</string>
 
 
-    <string name="pda1_1">Üdvözlöm Kapitány!
+    <string name="pda1_1">Köszöntelek!
         \n \n
-        Pluto vagyok, a Pannon Csillagda első számú űrhajója.
-        Én segítelek a küldestésben, melynek célpontja a Mars bolygó meghódítása.
-        </string>
+        Plútó vagyok, a Pannon Csillagda űrrobotja.
+        Én segítelek a küldestésben, melynek célja a Mars bolygó meghódítása.
+        &#128521;</string>
 
-    <string name="pda1_2"> Küldetésünk első helyszíne, a Pannon Csillagda első szintje lesz.
-        Itt megismerkedsz mindennel ami szükséges a felszálláshoz.
+    <string name="pda1_2"> Küldetésünk a Pannon Csillagda első szintjén kezdődik.
+
+        &#128640;
         \n \n
         Készen állsz?</string>
 
+    <string name="pda1_3"> Nagyszerű!
+        \n \n
+        Ahhoz, hogy meghódítsuk a Marsot, izgalmas dolgokat kell megtudnunk a világűrről.
+    </string>
+
+    <string name="pda1_4"> Szerencsére itt minden kérdésre választ kaphatunk,
+        csak végig kell járnunk a kiállításokat. &#128102;   </string>
+
+    <string name="pda1_5"> Először a hullócsillagokkal ismerkedhetünk meg.
+        Bár igen kicsik, mégis látványosak. Ezt a hatalmas sebességüknek köszönhetik. &#127776;</string>
+
+    <string name="pda2_1"> Bizony, ez hihetetlen sebesség.
+        Ilyen gyorsasággal 2 másodperc alatt Budapestre érnénk. </string>
+
+    <string name="pda2_2">A nagyobb darabok akár a földet is elérhetik.
+        Lehetnek kőből, ezeket nevezzük kőmeteoritnak,
+        vagy fémekből, ők a vasmeteoritok.</string>
+
+    <string name="pda2_3"> Egy ilyen vasmeteorit a Gibeon  meteorit is,
+        melynek egy szép nagy darabját itt is láthatjuk.</string>
+
+    <string name="pda3_1">Igen, ahogy a legtöbb vasmeteorit, a Gibeon is vas mellett leginkább
+        nikkelt tartalmaz. A Gibeon nagyjából akkora volt, mint egy kisbusz, mikor a földünkkel találkozott.</string>
+
+    <string name="pda3_2">A földünk néhányszor sokkal nagyobb darabokkal is találkozott.
+        Az egészen nagy darabok komoly katasztrófákat is okozhatnak.</string>
+
+    <string name="pda3_3">Egy ilyen nagyváros méretű darab okozta a dinók kihalását is.
+        A megtalált kráter méretéből tudjuk, hogy akár 14 km széles is lehetett.</string>
+
+    <string name="pda4_1">Bizony, egy ősi Azték városról kapta nevét, mely a Yucatán félsziget
+        partjainál fekszik. A becsapódás miatt az akkori élet fele eltűnt a Földről.</string>
+
+    <string name="pda4_2">Nagyszerű, most már rengeteg újdonságot tudunk a Naprendszer parányairól.
+        Ideje folytatni utunkat!</string>
+
+    <string name="pda4_3">Galileo Galileit a modern csillagászat szülőatyjának is nevezzük.
+        Ezt a címet azzal érdemelte ki, hogy ő használta legelőször a távcsővet az
+        égbolt megfigyelésére.</string>
+
+    <string name="pda4_4">Rengeteg új felfedezés kötődik a nevéhez. Feljegyezte a Vénusz fázisait,
+        a Hold krátereit, a napfoltokat és rájött, hogy a Tejút sávja valójában milliónyi csillag.</string>
+
+    <string name="pda4_5">Az egyik legnagyobb felfedezése vezette rá, hogy valójában a Föld és a
+        többi bolygó a Nap körül kering, és nem a Föld a mindenség középpontja.</string>
+
+    <string name="pda5_1">Ez a felismerése végül a tudomány forradalmához vezetett. Ennek a
+        forradalomnak köszönhető, hogy GPS segít minket az utakon, és okostelefonokat
+        használhatunk. </string>
+
+    <string name="pda5_2">Galileinek köszönhetően csillagközi lakóhelyünkről, a Naprendszerről is
+        rengeteg újdonságot tudtunk meg. Ám a két utolsó bolygót nem ismerhette.</string>
+
+    <string name="pda5_3">Az Uránusz felfedezéséhez már sokkal nagyobb távcsőre volt szükség.
+        Az Uránusz szabálytalan mozgásából pedig néhány matematikus felfedezte a Neptunuszt.</string>
+
+    <string name="pda5_4">Ő a legkülső bolygó. Kepler rájött arra, hogy minél távolabb van egy
+        égitest a naptól, annál több idő mire egy teljes kört bejár a Nap körül.</string>
+
+    <string name="pda6_1">Pontosan, mióta felfedüztük még csak egy teljes kört tett meg.</string>
+
+    <string name="pda6_2">Folytathatjuk hát küldetésünket a Csillagda harmadik szintjén.
+        Menjünk fel a falépcsőn és vágjunk bele!</string>
+
+    <string name="pda6_3">Látod azt a hajókormányt? Forgassuk meg! Láthatjuk, hogy vele együtt
+    fordul el a csillagtérkép. Az ilyen térképeket Planiszférának nevezzük.</string>
+
+    <string name="pda6_4">A Planiszférát helyesen beállítva megmutatja, hogy éppen milyen
+        csillagokat és csillagképeket figyelhetünk meg az égbolton. </string>
+
+    <string name="pda6_5">A GPS előtt a tájékozódást a csillagok segítették. Pontos órákkal, és
+        a megfelelő csillagtérképpel kiszámíthatjuk hol vagyunk a Földön.</string>
+
+    <string name="pda7_1">A nagy felfedezések időszakában a csillagok mutattak írányt
+        a hajósok számára. A navigátorok nélkülözhetetlen tagjai voltak a legénységnek.</string>
+
+    <string name="pda7_2">Ma már Föld körül keringő műholdakat használunk a tájékozodáshoz.
+        Ezt nevezzük GPS-nek. Ők biztosítják, hogy ne tévedhessünk el.</string>
+
+    <string name="pda7_3">Másfajta műholdak is léteznek. A csillagászok speciális, keringő eszközöket
+        használnak, hogy még jobb megfigyeléseket végezzenek. Ezeket nevezzük űrtávcsőveknek.</string>
+
+    <string name="pda7_4">Legismertebb közülük a Hubble, mely 1990 óta járja űrbéli útját.
+        Őt nem zavarja a légkör, ezért hatalmas tükrével lélegzetelállító képeket tud készíteni.</string>
+
+    <string name="pda8_1">Igen, körülbelül olyan magas mint ez a terem. </string>
+
+    <string name="pda8_2">A Hubble űrtávcső a látható fény tartományában dolgozik, ami azt jelenti,
+        hogy a szívárványban megtalalhátó színek fényét képes észlelni. </string>
+
+    <string name="pda8_3">Mellette dolgoznak még másfajta űrtávcsővek is, melyek más tartományokat
+        figyelnek. Például infravörös, mikrohullám, rádióhullám vagy gamma sugárzás.</string>
+
+    <string name="pda8_4">Ahogy a technológia fejlődik, egyre jobb űrtávcsőveket tudunk készíteni.
+        Így mindig újabbakra cserélhetjük le a nyugdíjba vonuló eszközeinket.</string>
+
+    <string name="pda9_1">Neki már 6,5 méter széles tükre van, így reményeink szerint a világegyetem
+        újabb titkaira is fény derül majd a segítségével.</string>
+
+    <string name="pda9_2">Ezeknek a csodálatos űrtávcsőveknek köszönhetően hihetetlen
+        felefedezéseket tettünk az elmúlt évtizedekben.</string>
+
+    <string name="pda9_3">Megtudtuk, milyen alakja van a galaxisunknak, megfigyelhettük távoli
+        óriás csillagok robbanását, és rájöttünk, milyen hatalmas a világegyetem.</string>
+
+    <string name="pda10_1">Hihetetlen! Nagyjából, mint ahány homokszemcse van egy hatalmas tengerparton.
+        Ezek közül csupán egy a mi kozmikus lakóhelyünk: a Tejútrendszer.</string>
+
+    <string name="pda10_2">A galaxisunk egy spirális galaxis, ami azt jelenti, hogy a csillagok
+        hatalmas spirálkarokba tömörülnek, köztük pedig sokkal kevesebben laknak.</string>
+
+    <string name="pda10_3">A hozzánk legközelebbi nagy galaxis az Androméda, ami folyamatosan
+        közelít hozzánk, de ne aggódj, még évmilliárdokra vagyunk az ütközéstől.</string>
+
+    <string name="pda10_4">Az Androméda 2,5 millió fényév távolságra van, így még a fénynek is ennyi
+        időre van szüksége, mire eljut hozzánk az Andromédáról.</string>
+
+    <string name="pda10_5">Ha jobban belegondolunk, akkor mi ma azt láthatjuk, hogy milyen volt az
+        Androméda 2,5 millió évvel ez előtt. Vajon ők milyennek láthatnak most minket?</string>
+
+    <string name="pda11_1">Igen, ez egy igazi időutazás! Bátran kijelenthetjük, hogy a csillagászat
+        egy kicsit régészet is.</string>
+
+    <string name="pda11_2">Az időutazás után következzen a valódi űrutazás! \n \n Irány a Csillagda
+        negyedik szintje!</string>
+
+    <string name="pda11_3">Az emberiség eddigi egyik legnagyobb hőstette, hűséges égi kísérőnk,
+        a Hold meghódítása volt.</string>
+
+    <string name="pda11_4">Hogy ez a nehéz küldetés sikerüljön, először is építeni kellett egy
+        110 méter magas rakétát.</string>
+
+    <string name="pda12_1">A Saturn V tizenkét másodperc alatt elrepítene minket Budepestre.
+        Ez sokkal jobban hangzik mint a három órás buszút.</string>
+
+    <string name="pda12_2">Elsőként az Apollo 11 legénységének sikerült leszállni a Hold felszínére.
+        Neil Armstrongnak, Buzz Aldrinnak, és a keringő egységen maradó Michel Collinsnak.</string>
+    
+    <string name="pda12_3">Összesen 8 napot töltöttek el a világűrben, amelyből mindösszesen 22 órát
+        tartózkodtak a Hold felszínén.</string>
+
+    <string name="pda13_1">Őket még 5 sikeres küldetés követte a Hold felszínére:\n
+    Apollo 12\n Apollo 14\n Apollo 15\n Apollo 16\n Apollo 17</string>
+
+    <string name="pda13_2">Az Apollo 13 természetesen nem babonából maradt ki. Ők is elindultak a Holdra,
+        ám útközben balesetük volt. Szerencsére az űrhajósok életben visszaérkeztek a Földre.</string>
+
+    <string name="pda13_3">A Holdon nagyon nehéz mozogni, ezért az utolsó 3 küldetésre speciális
+        holdjáró autókat vittek magukkal, melyeket nagyon gondosan kellett megtervezni.</string>
+
+    <string name="pda14_1">Ezeket ott is hagyták a Holdon. Így mi magyarok a mai napig
+        ott parkolunk 3 holdjáró autóval a Hold felszínén.</string>
+
+    <string name="pda14_2">Tehát 1969 az első holdraszállás, most pedig meghódítjuk a Marsot. A Mars
+        sokkal távolabb van tőlünk mint a Hold, ezt az utat nem járhatjuk meg 8 nap alatt.</string>
+
+    <string name="pda15_1">Igen, körülbelül 500 nap! El tudnád viselni ennyi ideig ha összezárnának
+        5 emberrel? Még szerencse, hogy én robot vagyok.</string>
+
+    <string name="pda15_2">Jelenleg 3 szervezet próbálja meg előkészíteni az emberes Mars küldetéseket:
+        Az Amerika Űrügynökség, az Európai Űrügynökség és a Space X. </string>
+
+    <string name="pda15_3"> A Space X 2018-ban sikeresen tesztelte a Falcon Heavy rakétáját,
+        mellyel elküdtek egy piros Tesla Roadster-t a Mars-pályán túlra.</string>
+
+    <string name="pda16_1"> Starman előtt a műszerfalon pedig egy igen hasznos tanács díszeleg:
+        \"Don\'t Panic!\"\nazaz\n\"Csak semmi pánik!\"</string>
+
+    <string name="pda16_2">Most, hogy Starmannal eljutottunk a Marsra, nincs más dolgunk mint felfedezni
+    a vörös bolygót. Irány a Csillagda második szintje!</string>
+
+    <string name="pda16_3">A Mars felszínét száraz sivatagok uralják. Egyedül a homokviharok
+        törik meg időnként a csendet, és rendezik át a Mars felszínét.</string>
+
+    <string name="pda16_4">Sok érdekes felszíni alakzat figyelhető meg a Marson: például az Arc Táblahegy,
+        ami a régi felvételeken valóban egy arcnak tűnik, illetve sok mára kialudt vulkán.</string>
+
+    <string name="pda17_1">A maga 21 ezer méteres magasságával majdnem háromszor olyan magas, mint a
+        legmagasabb földi hegycsúcs. Nem semmi rekord.</string>
+
+    <string name="pda17_2">A Mars nevét az ókori római hadistenségről kapta, ám színe miatt sokszor
+        nevezik a vörös bolygónak is.</string>
+
+    <string name="pda18_1">A vas-oxidot hétköznapi néven rozsdaként is emlegetjük, így a Marsot a
+        vörös bolygó helyett akár a rozsdás bolygónak is nevezhetnénk.</string>
+
+    <string name="pda18_2">A Mars urai jelenleg a marsjáró robotok. 2004-ben kezdte meg munkáját az
+        Opportunity és a Spirit. Az ő hasonmásukat láthatod a terem végében.</string>
+
+    <string name="pda18_3">A Mars nagyon távol van tőlünk, így nem lehetne őket a Földről
+        irányítani. Szerencsére elég okosak, hogy megoldják ezt a problémát.</string>
+
+    <string name="pda19_1">Ezekkel feltérképezik a terepet, és önmaguknak számítják ki a legjobb útvonalat.
+        Egy másik kamerarendszerrel pedig csodálatos felvételeket készít a Mars felszínéről.</string>
+
+    <string name="pda19_2">Napelemek segítik őket az energiatermelésben, melyek működtetik a motorokat,
+        és a kőzeteket vizsgáló műszereket.</string>
+
+    <string name="pda20_1">90 naposra tervezték őket, de ezt jóval túlteljesítették. A Spirit 7 évig,
+        míg az Opportunity 15 évig üzemelt a Marson.</string>
+
+    <string name="pda20_2">Az Opportunity utolsó üzenete is igen szívszorító volt:\n\n
+        \"Az akkumulátoraim merülőben, minden sötétbe borul.\"</string>
+
+    <string name="pda20_3">Őket a Curiosity követte, mely napelemek helyett már egy saját
+        atomreaktort kapott, így a homokviharoknak esélyük sincs ellene.</string>
+
+    <string name="pda20_4">Az egyik fő kutatási területe, hogy ha volt valaha élet a Marson,
+        akkor rábukkanjon ennek bizonyítékára.</string>
 
 </resources>

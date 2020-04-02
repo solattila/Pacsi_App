@@ -187,4 +187,12 @@
         android:textSize="20sp"
         android:fontFamily="@font/audiowide"/>
 
+    <ImageView
+        android:id="@+id/imgRobot"
+        android:layout_width="59dp"
+        android:layout_height="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/robot" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

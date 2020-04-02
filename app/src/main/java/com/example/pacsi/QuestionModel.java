@@ -14,9 +14,11 @@ public class QuestionModel {
     private int mAnswer4;
     private boolean mAnswerBool4;
     private int mQuestionImage;
+    private int[] mPdaMess = null;
 
     public QuestionModel(int question, int answer1, boolean answerBool1, int answer2, boolean answerBool2,
-                         int answer3, boolean answerBool3, int answer4, boolean answerBool4, int questionImage) {
+                         int answer3, boolean answerBool3, int answer4, boolean answerBool4,
+                         int questionImage, int[] pdaMess) {
         mQuestion = question;
         mAnswer1 = answer1;
         mAnswerBool1 = answerBool1;
@@ -27,6 +29,14 @@ public class QuestionModel {
         mAnswer4 = answer4;
         mAnswerBool4 = answerBool4;
         mQuestionImage = questionImage;
+
+
+        if (pdaMess == null){
+            mPdaMess = null;
+        }else {
+            mPdaMess = pdaMess;
+        }
+
     }
 
     public int getQuestion() {
@@ -107,5 +117,13 @@ public class QuestionModel {
 
     public void setQuestionImage(int questionImage) {
         mQuestionImage = questionImage;
+    }
+
+    public int[] getPdaMess() {
+        return mPdaMess;
+    }
+
+    public void setPdaMess(int[] pdaMess) {
+        mPdaMess = pdaMess;
     }
 }
