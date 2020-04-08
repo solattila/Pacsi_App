@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -257,11 +258,12 @@ public class MultiActivity extends AppCompatActivity {
                     .setPositiveBtnText("Ok")
                     .setPositiveBtnBackground("#22b573")
                     .setGifResource(R.drawable.astronaut)      //pass your gif, png or jpg
-                    .isCancellable(true)
+                    .isCancellable(false)
                     .OnPositiveClicked(new TTFancyGifDialogListener() {
                         @Override
                         public void OnClick() {
-                            finish();
+                            Intent intent = new Intent(MultiActivity.this, CameraAct.class);
+                            startActivity(intent);
                         }
                     })
                     .build();
