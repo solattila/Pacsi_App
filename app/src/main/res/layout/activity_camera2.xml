@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="10dp"
-    tools:context=".CameraAct">
+    tools:context=".CameraAct"
+    android:background="@drawable/bg">
 
 
     <ImageView
@@ -15,14 +16,31 @@
         android:layout_height="400dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_image_black_24dp"
-        android:id="@+id/image_view"/>
+        android:id="@+id/image_view"
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bt_open"
-        android:text="open camera"
+        android:text="Készíts egy képet"
         android:layout_marginTop="10dp"
-        style="@style/Widget.AppCompat.Button.Colored"/>
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/audiowide"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnShare"
+        android:text="Kép megosztása"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/audiowide"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#ffffff"/>
 
 </LinearLayout>

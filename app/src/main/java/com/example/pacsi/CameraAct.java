@@ -24,6 +24,7 @@ public class CameraAct extends AppCompatActivity {
 
     ImageView mImageView;
     Button btOpen;
+    Button btnShare;
 
     Uri image_uri;
 
@@ -34,6 +35,7 @@ public class CameraAct extends AppCompatActivity {
 
         mImageView = findViewById(R.id.image_view);
         btOpen = findViewById(R.id.bt_open);
+        btnShare = findViewById(R.id.btnShare);
 
 
 
@@ -59,6 +61,17 @@ public class CameraAct extends AppCompatActivity {
 
                 }
 
+            }
+        });
+
+        btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_STREAM, image_uri);
+                shareIntent.setType("image/jpeg");
+                startActivity(Intent.createChooser(shareIntent, getResources().getString(R.string.send_to )));
             }
         });
 
